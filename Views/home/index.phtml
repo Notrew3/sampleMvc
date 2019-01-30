@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>		
+
+	<h1>
+		<?php
+			foreach ($this->users as $user) {
+				echo 'Id: '. $user->getId(). '- Nome: '.$user->getName().'<br><hr>';
+			}	
+		?>		
+	</h1>
+	
+</body>
+</html>
