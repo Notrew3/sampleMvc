@@ -7,11 +7,12 @@
 class Home extends Controller
 {
 	
+	use HomeService;
+
 	public function index()
-	{
-		$home = new HomeService();		
+	{				
 		
-		$this->view->render('Views/home/index.phtml', array('users' => $home->listUserObjects()));
+		$this->view->render('Views/home/index.phtml', array('users' => $this->listUserObjects()));
 		
 	}
 

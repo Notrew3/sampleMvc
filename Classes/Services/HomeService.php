@@ -3,7 +3,7 @@
 /**
  * 
  */
-class HomeService 
+trait HomeService 
 {
 	
 	public function listUserObjects()
